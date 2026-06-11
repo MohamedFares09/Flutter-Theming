@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:theming/core/app_text_style.dart';
 
 class Register extends StatelessWidget {
   const Register({super.key});
@@ -13,17 +14,7 @@ class Register extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
-              child: Text(
-                'Create Account',
-                style: TextStyle(
-                  color: const Color(0xFF1A242F),
-                  fontSize: 28,
-                  fontWeight: FontWeight.w500,
-                  height: 1.29,
-                ),
-              ),
-            ),
+            Center(child: Text('Create Account', style: AppTextStyle.f28w500)),
             SizedBox(height: 4),
             Center(
               child: SizedBox(
@@ -31,26 +22,12 @@ class Register extends StatelessWidget {
                 child: Text(
                   'Welcome Back You’ve Been Missed!',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: const Color(0xFF707B81),
-                    fontSize: 16,
-
-                    fontWeight: FontWeight.w400,
-                    height: 1.50,
-                  ),
+                  style: AppTextStyle.f16w400,
                 ),
               ),
             ),
             SizedBox(height: 50),
-            Text(
-              'Your Name',
-              style: TextStyle(
-                color: const Color(0xFF1A242F),
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                height: 1.25,
-              ),
-            ),
+            Text('Your Name', style: AppTextStyle.f16w500),
             SizedBox(height: 6),
             TextFormField(
               decoration: InputDecoration(
@@ -66,15 +43,7 @@ class Register extends StatelessWidget {
                 ),
               ),
             ),
-            Text(
-              'Email Address',
-              style: TextStyle(
-                color: const Color(0xFF1A242F),
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                height: 1.25,
-              ),
-            ),
+            Text('Email Address', style: AppTextStyle.f16w500),
             SizedBox(height: 6),
             TextFormField(
               decoration: InputDecoration(
@@ -91,15 +60,7 @@ class Register extends StatelessWidget {
               ),
             ),
             SizedBox(height: 30),
-            Text(
-              'Password',
-              style: TextStyle(
-                color: const Color(0xFF1A242F),
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                height: 1.25,
-              ),
-            ),
+            Text('Password', style: AppTextStyle.f16w500),
             SizedBox(height: 12),
             TextFormField(
               decoration: InputDecoration(
@@ -115,20 +76,7 @@ class Register extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8),
-            Align(
-              alignment: AlignmentGeometry.centerRight,
-              child: Text(
-                'Recovery Password',
-                textAlign: TextAlign.right,
-                style: TextStyle(
-                  color: const Color(0xFF707B81),
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
-                  height: 1.23,
-                ),
-              ),
-            ),
+
             SizedBox(height: 12),
             Container(
               decoration: BoxDecoration(
@@ -145,12 +93,7 @@ class Register extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Register',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500,
-                      height: 1.22,
-                    ),
+                    style: AppTextStyle.f18w500.copyWith(color: Colors.white),
                   ),
                 ),
               ),
